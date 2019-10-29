@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Web</title>
+    <style >
+      .container{
+        display: flex;
+        /*flex-direction: row column;*/
+        /*justify-content: flex-start center felx-end space-between space-around;*/
+        /*align-items: strech flex-start center felx-end;*/
+        height: 80vh;
+        background: lightblue;
+      }
+      .item{
+        /* flex-grow: 1; 여백 비율을 맞춤
+        flex-basis: 0; 본 컨텐츠의 비율을 맞춤, 기본값 auto*/
+        flex: 1;
+        padding: 2em;
+        border: 3px solid black;
+        background: white;
+      }
+      /* .item:nth-child(1) {flex-grow: 1;}
+      .item:nth-child(2) {flex-grow: 1;}
+      .item:nth-child(3) {flex-grow: 1;}
+      .item:nth-child(4) {flex-grow: 1;}
+      .item:nth-child(5) {flex-grow: 1;} */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">AAA</div>
+      <div class="item">B</div>
+      <div class="item">CCCCC</div>
+      <div class="item">DDD</div>
+      <div class="item">E</div>
+    </div>
+  </body>
+</html>

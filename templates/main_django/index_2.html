@@ -1,0 +1,49 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}{{block.super}}{% endblock %}
+
+{% block content %}
+      <div class="breadcrumbs">
+        <div class="breadcrumbs-inner">
+          <div class="row m-0">
+            <div class="col-sm-4">
+              <div class="page-header float-left">
+                <div class="page-title">
+                  <h1>Dashboard</h1>
+                </div> <!-- page-title -->
+              </div> <!-- page-header -->
+            </div> <!-- col-sm-4 -->
+            <div class="col-sm-8">
+              <div class="page-header float-right">
+                <div class="page-title">
+                  <ol class="breadcrumb text-right">
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">기사</li>
+                  </ol>
+                </div> <!-- page-title -->
+              </div> <!-- page-header -->
+            </div> <!-- col-sm-8 -->
+          </div> <!-- row -->
+        </div> <!-- breadcrumbs-inner -->
+      </div> <!-- breadcrumbs -->
+
+      <div class="content">
+        <div class="row">
+          <div class="col">
+            <section class="card">
+              <h4 class="box-title"><img src="../../static/img/logo.png" class="mini">기사 제목</h4>
+              <p class="project">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div class="card-footer">언론사 / 날짜</div>
+            </section>
+          </div> <!-- col -->
+        </div> <!-- row -->
+      </div> <!--content -->
+      <!-- 하단 -->
+      <footer class="site-footer">
+        Copyright &copy; <a href="#">//sleep 슬래시슬립</a> <!-- github 링크 -->
+      </footer>
+    </div> <!--right-panner -->
+{% endblock content %}

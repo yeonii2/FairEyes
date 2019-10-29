@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        border: 3px solid black;
+        text-align: center;
+      }
+      .input-check:checked ~ .box{
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="input-check">체크하세요</label>
+    <input type="checkbox" clss="input-check" id="input-check"> <!-- id와 for를 맞춰주면 함께 반응한다. -->
+    <div class="box">BOX</div>
+  </body>
+</html>

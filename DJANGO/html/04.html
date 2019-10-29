@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        /*position: static 다른 엘리먼트에 영향을 줌. relative 자신만 움직임. absolute fixed 스크롤을 하더라도 고정되어 있음. sticky 스크롤의 영향을 받다가 정해진 값을 만나면 고정됨.; */
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+      }
+      .a{
+        background: red;
+        z-index: 1; /*숫자가 클수록 맨 앞으로 옴. position이 static이 아니면 무조건 적용됨*/
+      }
+      .b{
+        position: relative;
+        left: 100px;
+        top: 100px;
+        background: green;
+      }
+      .child{
+        position: absolute; /*부모가 static만 아니면 기준이 부모가 됨.*/
+        left: 10px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        background: red;
+      }
+      .c{ background: blue; }
+    </style>
+  </head>
+  <body>
+    <div class="a"></div>
+    <div class="b">
+      <div class="child"></div>
+    </div>
+    <div class="c"></div>
+  </body>
+</html>
