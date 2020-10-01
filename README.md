@@ -1,2 +1,2 @@
-# Stander Website builders_Challenge
+# Standerd Website builders_Challenge
 Django
